@@ -1,0 +1,12 @@
+#!/bin/sh
+
+ls $1
+
+while true; do
+	read -p "Remove these items?" yn
+	case $yn in
+		[Yy]* ) rm -R $1;;
+		[Nn]* ) exit;;
+		* ) echo "Please answer yes or no.";;
+	esac
+done
