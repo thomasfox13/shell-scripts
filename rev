@@ -1,0 +1,8 @@
+while true
+do 
+	read var
+	for char in {#var[@]}
+		echo $char
+	done
+done
+		
